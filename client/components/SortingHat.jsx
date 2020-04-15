@@ -4,7 +4,7 @@ import React from 'react'
 class SortingHat extends React.Component {
   render () {
     return (
-      <div>
+      <div className="sortingHat">
         <h2>SORTING HAT</h2>
         {this.props.hogwartsHouse && <p>I've sorted high, I've sorted low,<br/>
         So put me on and you will know <br/>
@@ -22,7 +22,7 @@ class SortingHat extends React.Component {
 
         {/* <button onClick={this.props.hogwartsHouse}>Join your House now!</button> */}
         <br/>
-        <button onClick={this.props.update}>Update ☍</button>
+        <button type="update" onClick={this.props.update}>Update ☍</button>
       </div>
     )
   }
