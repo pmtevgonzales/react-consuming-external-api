@@ -24,11 +24,11 @@ class App extends React.Component {
     return (
       <div>
         <h1>Wizarding World ϟ</h1>
+        <h2>HOGWARTS SCHOOL OF WITCHCRAFT AND WIZARDRY</h2>
         <div>
           <SortingHat hogwartsHouse={this.state.hogwartsHouse} update={this.update} />
         </div>
         <div>
-        <h2>HOGWARTS SCHOOL OF WITCHCRAFT AND WIZARDRY</h2>
           <Houses />
         </div>
         <div>

@@ -41,6 +41,9 @@ class House extends React.Component {
   }
   
   render() {
+    const capitalise = (word) => {
+      return word.charAt(0).toUpperCase() + word.slice(1)
+    }
     return (
       <div>
         <div>
@@ -48,13 +51,13 @@ class House extends React.Component {
         </div>
         <div>
           <p>Founder: {this.state.founder}</p>
-          <p>Mascot: {this.state.mascot}</p>
+          <p>Mascot: {capitalise(this.state.mascot)}</p>
           <p>Head of House: {this.state.headOfHouse}</p>
           <p>House Ghost: {this.state.houseGhost}</p>
           <p>This house values:</p>
           <ul>
             {this.state.values.map ((value) => {
-              return <li>{value}</li>
+              return <li>{capitalise(value)}</li>
             })}
           </ul>
         </div>
