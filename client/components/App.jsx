@@ -1,9 +1,20 @@
 import React from 'react'
+import { getSortingHat } from '../apis/hpotter'
 
-const App = () => {
-  return (
-    <h1>React development has begun!</h1>
-  )
+class App extends React.Component {
+  componentDidMount() {
+    getSortingHat()
+      .then((hogwartsHouse) => {
+        console.log(hogwartsHouse)
+      })
+  }
+  render () {
+    return (
+      <div>
+        <h1>Wizarding World ϟ</h1>
+      </div>
+    )
+  }
 }
 
 export default App
